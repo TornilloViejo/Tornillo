@@ -1,0 +1,348 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	font-family: times;
+	color: #333;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+	margin: 0;
+
+}
+
+
+
+#container {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.contenedor /* afecta todo el texto */
+{
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+	
+}
+
+
+ /* nav */
+
+
+ .cabezera{
+	background: #393838;
+	color: white;
+	padding: 2rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+    height: 7rem;
+    z-index: 999;
+}
+
+
+.logo-nav
+{   
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cabezera a{
+	color: white;
+	text-decoration: none;
+	
+
+}
+
+.cabezera .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.naveg ul{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.naveg ul li {
+	display: inline-block;
+}
+.naveg ul li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+
+}
+
+.naveg ul li a:hover {
+	background: #4a4a4a;
+}
+
+.logoimg{
+	width: 170px;
+    height: 100px;
+    margin-right: 200px;
+
+}
+
+
+.main{
+	padding-top: 12rem;
+}
+
+.menu-icono{
+	display:none;
+}
+
+
+.menu-verical{
+position: absolute;
+display: flex;
+flex-direction: column;
+list-style: none;
+width: 200px;
+background-color: red;
+
+}
+
+#title-top {
+ margin-top: 200px;   
+ margin-bottom: -100px;
+
+}
+
+
+
+
+.imageC{
+display: flex;
+margin-top: 7%;
+width: 100%;
+justify-content: center;
+align-items: center;
+ 
+
+}
+/* Boton nav */
+
+
+
+.show{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+
+
+.show > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.show > li:hover{
+	background-color: black;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.show li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+	font-size: .9rem;
+}
+/* Tarjetas */
+
+.card a {
+    text-decoration: none;
+}
+
+.text:hover{
+	opacity: 0%;
+}
+#container .info {
+    display: grid; 
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#container .info .test {
+    padding: 15px;
+    background: red;
+}
+
+#container .info .card {
+    width: 400px;
+    height: 250px;
+    transition: .5s ease;
+}
+
+#container .info .card:hover {
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+#container .info .card p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000;
+}
+
+#container .info .card p::first-letter {
+    text-transform: uppercase;
+}
+
+#container .info .card img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ /* img */
+.img1{ width: 400px;
+height: 200px;
+}
+
+/* footer */
+
+.footer{
+	background: rgb(27, 27, 27);
+	padding: 4rem 0;
+	text-align: center;
+	
+}
+
+.footer P {
+    color: white;
+}
+/* stilos */
+
+.footer-info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Index Componentes */
+
+.imageC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+h1{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.inforam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.inforam p {
+    width: 77%;
+}
+
+.last-p {
+    margin-bottom: 5rem;
+}
+
+
+
+.contenedor-creditos {
+    height: 200px;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+@media  only screen and (max-width:  767px){
+
+    .last-p {
+        margin-bottom: 2rem;
+    }
+
+    .cabezera{
+        background: #393838;
+        color: white;
+        padding: 2rem 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 10rem;
+        z-index: 999;
+    }
+    
+    .cabezera .center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+        #container .info {
+            margin-top: 500px;
+            display: grid; 
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr;
+            height: 1000px;
+            }
+
+        .footer-bottom {
+            margin-top: 25rem;
+        }
+    
+}
